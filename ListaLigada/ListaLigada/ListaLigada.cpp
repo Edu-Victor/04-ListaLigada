@@ -149,6 +149,7 @@ void inserirElemento()
 			}
 			aux->prox = novo;
 		}
+		cout << "Elemento " << novo->valor << " adicionado na lista\n";
 
 	}
 
@@ -178,6 +179,7 @@ void excluirElemento()
 			aux->prox = posicao->prox;
 		}
 		free(posicao);
+		cout << "O elemento " << excluir << " foi excluido\n";
 	}
 
 	else {
