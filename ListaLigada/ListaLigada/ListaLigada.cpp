@@ -128,7 +128,7 @@ void inserirElemento()
 
 	if (igual != NULL) { //verifica se o elemento ja esta na lista
 
-		cout << "O elemento ja esta na lista \n";
+		cout << "O elemento já esta na lista \n";
 	}
 
 	else {
