@@ -116,6 +116,7 @@ void inserirElemento()
 	NO* novo = (NO*)malloc(sizeof(NO));
 	if (novo == NULL)
 	{
+		cout << "Erro: Falha na alocação de memória." << endl;
 		return;
 	}
 
