@@ -150,10 +150,7 @@ void inserirElemento()
 			aux->prox = novo;
 		}
 		cout << "Elemento " << novo->valor << " adicionado na lista\n";
-
 	}
-
-
 }
 
 void excluirElemento()
