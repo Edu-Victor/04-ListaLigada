@@ -64,7 +64,6 @@ void menu()
 		default:
 			break;
 		}
-
 		system("pause"); // somente no windows
 	}
 }
@@ -80,10 +79,8 @@ void inicializar()
 		aux = aux->prox;
 		free(paraExcluir);
 	}
-
 	primeiro = NULL;
 	cout << "Lista inicializada \n";
-
 }
 
 void exibirQuantidadeElementos() {
@@ -95,7 +92,6 @@ void exibirQuantidadeElementos() {
 		aux = aux->prox;
 	}
 	cout << "Quantidade de elementos: " << nElementos << endl;
-
 }
 
 void exibirElementos()
