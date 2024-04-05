@@ -156,6 +156,8 @@ void inserirElemento()
 			aux->prox = novo;
 		}
 
+		cout << "Elemento " << novo->valor << " inserido na lista" << endl;
+
 	}
 
 
@@ -174,7 +176,7 @@ void excluirElemento()
 
 		NO* posicao = posicaoElemento(excluir);
 
-		if (posicao != NULL) { //verifica a lista vazia
+		if (posicao != NULL) { //verifica se o tem o elemento na lista.
 
 			if (posicao == primeiro) { //verifica o primeiro
 				primeiro = posicao->prox;
@@ -188,6 +190,7 @@ void excluirElemento()
 				aux->prox = posicao->prox;
 			}
 			free(posicao);
+			cout << "Elemento " << excluir << " foi deletado da lista" << endl;
 		}
 
 		else {
@@ -211,10 +214,10 @@ void buscarElemento()
 		NO* posicao = posicaoElemento(busca);
 
 		if (posicao != NULL) {
-			cout << "Elemento " << posicao->valor << " encontrado \n";
+			cout << "Elemento " << posicao->valor << " encontrado na posicao " << posicao << endl;
 		}
 		else {
-			cout << "O elemento nao existe\n";
+			cout << "O elemento " << busca << " nao existe na lista" << endl;
 		}
 	}
 }
